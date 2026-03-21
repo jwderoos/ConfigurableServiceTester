@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "409291eb0f03f7097d9317441d43e1eb",
+    "content-hash": "637102836787c93ca3287538527b4e8f",
     "packages": [
         {
             "name": "doctrine/collections",
@@ -142,20 +142,21 @@
         },
         {
             "name": "jwderoos/configurable",
-            "version": "dev-feature/3-implement-configurable-classes",
+            "version": "v1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jwderoos/configurable.git",
-                "reference": "e05a33603b9fb36224836d60a47ed157e518d5a4"
+                "reference": "71bdd5a55665b1f492cb4f5ebe6368f840d7be4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jwderoos/configurable/zipball/e05a33603b9fb36224836d60a47ed157e518d5a4",
-                "reference": "e05a33603b9fb36224836d60a47ed157e518d5a4",
+                "url": "https://api.github.com/repos/jwderoos/configurable/zipball/71bdd5a55665b1f492cb4f5ebe6368f840d7be4c",
+                "reference": "71bdd5a55665b1f492cb4f5ebe6368f840d7be4c",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.3"
+                "php": "^8.3",
+                "symfony/options-resolver": "^5.4|^6.0|^7.0|^8.0"
             },
             "require-dev": {
                 "enlightn/security-checker": "^2.0",
@@ -189,9 +190,9 @@
             "description": "Package for self configuring services",
             "support": {
                 "issues": "https://github.com/jwderoos/configurable/issues",
-                "source": "https://github.com/jwderoos/configurable/tree/feature/3-implement-configurable-classes"
+                "source": "https://github.com/jwderoos/configurable/tree/v1.1.2"
             },
-            "time": "2026-01-14T18:07:39+00:00"
+            "time": "2026-03-21T18:41:52+00:00"
         },
         {
             "name": "psr/cache",
@@ -1793,6 +1794,77 @@
                 }
             ],
             "time": "2026-03-06T16:33:18+00:00"
+        },
+        {
+            "name": "symfony/options-resolver",
+            "version": "v7.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/options-resolver.git",
+                "reference": "b38026df55197f9e39a44f3215788edf83187b80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/b38026df55197f9e39a44f3215788edf83187b80",
+                "reference": "b38026df55197f9e39a44f3215788edf83187b80",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2",
+                "symfony/deprecation-contracts": "^2.5|^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\OptionsResolver\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Provides an improved replacement for the array_replace PHP function",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "config",
+                "configuration",
+                "options"
+            ],
+            "support": {
+                "source": "https://github.com/symfony/options-resolver/tree/v7.4.0"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://github.com/nicolas-grekas",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2025-11-12T15:39:26+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
@@ -9733,77 +9805,6 @@
             "time": "2026-01-05T08:47:25+00:00"
         },
         {
-            "name": "symfony/options-resolver",
-            "version": "v7.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "b38026df55197f9e39a44f3215788edf83187b80"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/b38026df55197f9e39a44f3215788edf83187b80",
-                "reference": "b38026df55197f9e39a44f3215788edf83187b80",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2",
-                "symfony/deprecation-contracts": "^2.5|^3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\OptionsResolver\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Provides an improved replacement for the array_replace PHP function",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "config",
-                "configuration",
-                "options"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/options-resolver/tree/v7.4.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://github.com/nicolas-grekas",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2025-11-12T15:39:26+00:00"
-        },
-        {
             "name": "symfony/process",
             "version": "v7.4.5",
             "source": {
@@ -10123,7 +10124,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "jwderoos/configurable": 20,
         "roave/security-advisories": 20
     },
     "prefer-stable": true,
