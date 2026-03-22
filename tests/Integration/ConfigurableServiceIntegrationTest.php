@@ -33,9 +33,7 @@ final class ConfigurableServiceIntegrationTest extends KernelTestCase
         $this->assertInstanceOf(ConfigurableServiceRegistry::class, $registry);
         $configuration = new Configuration();
 
-        foreach ($registry->getConfigurableServicesByConfiguration($configuration) as $configurableService) {
-            $configuration->prepareConfiguration($configurableService);
-        }
+        $registry->prepareConfiguration($configuration);
 
         $this->assertTrue($configuration->propertyExists(ConfigurableService::CONFIG_STRING_OPTION_1));
         $this->assertTrue($configuration->propertyExists(ConfigurableService::CONFIG_OPTIONAL_OPTION_2));
